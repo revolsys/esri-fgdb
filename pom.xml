@@ -1,0 +1,78 @@
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.revolsys.esri</groupId>
+  <artifactId>esri-fgdb-parent</artifactId>
+  <packaging>pom</packaging>
+  <name>ESRI File Geodatabase Library</name>
+  <version>TRUNK-SNAPSHOT</version>
+  <description>The parent module of the ESRI File Geodatabase Library.</description>
+  <url>http://revolsys.github.com/com.revolsys.open/</url>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:git@github.com:revolsys/esri-fgdb.git</connection>
+    <developerConnection>scm:git:git@github.com:revolsys/esri-fgdb.git</developerConnection>
+    <url>https://github.com/revolsys/esri-fgdb.git</url>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>paustin</id>
+      <name>Paul Austin</name>
+      <email>paul.austin@revolsys.com</email>
+    </developer>
+  </developers>
+
+  <organization>
+    <name>Revolution Systems Inc.</name>
+    <url>http://www.revolsys.com/</url>
+  </organization>
+
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/revolsys/com.revolsys.open/issues</url>
+  </issueManagement>
+<!--
+  <modules>
+    <module>esri-fgdbruntime</module>
+    <module>esri-filegdbapi</module>
+   </modules>
+-->
+  <distributionManagement>
+    <repository>
+      <id>revolsys-releases</id>
+      <name>revolsys-releases</name>
+      <url>https://open.revolsys.com/artifactory/libs-release-local/</url>
+    </repository>
+    <snapshotRepository>
+      <id>revolsys-snapshots</id>
+      <name>revolsys-snapshots</name>
+      <url>https://open.revolsys.com/artifactory/libs-snapshot-local/</url>
+    </snapshotRepository>
+    <site>
+      <id>gh-pages</id>
+      <name>Deployment through GitHub's site deployment plugin</name>
+      <url>github:http://revolsys.github.io/esri-fgdb</url>
+    </site>
+  </distributionManagement>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <github.global.server>github</github.global.server>
+    <gitHubUser>revolsys</gitHubUser>
+    <gitHubProject>esri-fgdb</gitHubProject>
+    <siteUrl>http://${gitHubUser}.github.io/${gitHubProject}/</siteUrl>
+    <gitHubUrl>https://github.com/${gitHubUser}/${gitHubProject}/</gitHubUrl>
+  </properties>
+</project>
